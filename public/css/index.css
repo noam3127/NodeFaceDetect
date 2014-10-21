@@ -1,0 +1,12 @@
+body {
+  font-family: "Lucida Grande", Arial, sans-serif;
+}
+#video-container {
+  margin-left: 20em;
+}
+
+.canvas-container {
+  display: inline-block;
+  margin-left: 5em;
+}
+

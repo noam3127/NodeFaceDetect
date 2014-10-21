@@ -1,0 +1,15 @@
+{
+  "name": "StockStuff",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.0.2",
+    "express": "~4.1.1",
+    "jade": "~0.31.2",
+    "method-override": "^1.0.0",
+    "morgan": "^1.0.0",
+    "mongoose": "^3.8.16",
+    "errorhandler": "^1.2.0",
+    "socket.io": "^1.1.0"
+  }
+}

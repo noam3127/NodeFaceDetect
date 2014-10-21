@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+	<title>Socket.io | Node-OpenCV</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>	
+	<div id="video-container">
+	  <h3 id="video-title">WebCam capture using 'GetUserMedia'<h3>
+	  <video id="video-player" autoplay="true" width="500" height="300"></video>
+  </div>
+  <!-- The Canvas element to be used to process the the frames from the video -->
+	<canvas id="img-canvas" width="400" height="300" style="display: none"></canvas>
+
+  <div class="canvas-container">
+    <h3 id="canvas1-title">Faces detected using mat.toBuffer() on the server</h3>
+  	<canvas id="detected" width="400" height="300"></canvas>
+  </div>
+  
+  <div class="canvas-container" id="canvas-2">  
+  <h3 id="canvas2-title"> Faces detected using File I/O on the server</h3>
+  	<canvas id="img-canvas2" width="400" height="300" style="display: none"></canvas>
+  	<img id="face-image"/>
+  </div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/bundle.js"></script>
+	<script type="text/javascript" src="js/webrtc.js"></script>
+
+</body>
