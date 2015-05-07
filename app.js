@@ -13,7 +13,6 @@ var express = require('express'),
   fs = require('fs'),
   socketHandler = require('./socketHandler');
 
-
 var app = module.exports = express();
 
 /**
@@ -52,15 +51,14 @@ app.get('/', function(req, res) {
   res.send('public/index.html');
 });
 
-// JSON API
-
 //app.use(api);
 
 // redirect all others to the index (HTML5 history)
 //app.get(routes.index);
 var server = http.createServer(app);
 var io = require('socket.io')(server);
-
+var faceRec = require('./faceRecognize')();
+//require('./faceRecognize')();
 io.on('connection', function(socket) {
   //socket.emit('connected', {hi: 'connected'});
   console.log('connected');
